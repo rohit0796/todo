@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/public/dDt5aAMTYK4gnbR9C0XLUPoIsDsXzbpi-Q.png">
+    <title>To-do app</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        To-do App
+    </nav>
+    <div class="container">
+        <form action="/add/todo" method="POST">
+            <div class="inputs">
+                <input type="text" name="todo" class="input" placeholder="What needs to be done ?" required="true">
+                <input type="date" name="dates" class="date" required="true" placeholder="by when">
+            </div>
+
+            <input type="submit" class="button" value="Add To-Do">
+
+        </form>
+
+        <ul>
+
+            <% todos.forEach(todo=> { %>
+                <div class="li">
+                    <div class="lists">
+                        <div class="item">
+                            <input type="checkbox" class="check">
+                            <%= todo.todo %>
+                        </div>
+                       
+                        by- <%=todo.dates.toString().substring(0,15)%>
+                    </div>
+                    <div class="right">
+
+                        <a href="/delete/todo/<%= todo._id%>"><img src="/delete.png" alt="delete"></a>
+                    </div>
+                </div>
+                <% }) %>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.navbar{
+    background-color: rgb(74, 222, 242);
+    padding: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.input{
+    width:50%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.button{
+    padding: 10px;
+    background:  rgb(199, 231, 231);
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+.button:hover{
+    background: rgb(120, 120, 194);
+    color: white;
+    
+}
+form{
+text-align: center;
+width: 50%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+    width: 80%;
+    border-radius: 15px;
+}
+
+.li{
+border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-type: none;
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        align-items: center;
+    background: rgb(74, 222, 242);
+}
+img{
+    height: 20px;
+}
+.check{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    border-style: none ;
+    width: 100%;
+    padding: 10px 5px;
+}
+.inputs{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    margin: 3px;
+    border: 0ch;
+}
+input:focus {
+    outline:none !important;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+}
+.item{
+    border-bottom: 2px dashed black;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+   
+}
