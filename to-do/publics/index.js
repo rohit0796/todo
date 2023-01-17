@@ -13,6 +13,7 @@ app.use(require('./routes/router'))
 app.use(require('./routes/todos'))
 
 
-app.listen(3000,()=>{
-    console.log('istening on port 3000')
-})
+const PORT= process.env.PORT|| 5000
+app.listen(PORT, () => {
+    console.log("listening tp 5000")
+})  
